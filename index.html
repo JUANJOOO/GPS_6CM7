@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ruta GPS</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/estilos.css') }}">
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seleccione Puntos de Ruta en el Mapa</h1>
+    <p>Haga clic en el mapa para seleccionar los puntos A y B.</p>
+    <div id="map"></div>
+
+    <!-- Incluir Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVx3xGQv4EudnH5tWD9doVWb3Fy-kWDFM&callback=initMap" async defer></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
